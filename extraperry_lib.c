@@ -33,8 +33,7 @@ int all_evens_to(int number){
     }
 
     printf("Even numbers below %d : \n", number);
-    int i;
-    for (i = 0; i <= number; ++i) {
+    for (int i = 0; i <= number; ++i) {
         if(i%2 == 0) {
             printf(" - %d", i);
         }
@@ -47,11 +46,20 @@ int is_prime(int number) {
         return -1;
     }
 
-    int i;
-    for (i = 2; i < number; i++) {
+    for (int i = 2; i < number; i++) {
         if (number%i == 0) {
             return i;
         }
     }
     return 0;
+}
+
+int count_char(char* str, char character) {
+    int count = 0;
+    for(int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == character) {
+            count++;
+        }
+    }
+    return count;
 }
