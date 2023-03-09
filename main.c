@@ -3,24 +3,15 @@
 
 int main(void){
 
-<<<<<<< HEAD
     printf("\n------Start------\n\n");
-=======
-    printf("\n--------------------Start--------------------\n");
->>>>>>> ecefc7bf4ad4793c2c19d3e57941af26b33e2883
     //Hello-World-:D
     printf("Hello World!");
     printf("\n\n");
 
-<<<<<<< HEAD
 
     printf("\n-------Ex1-------\n\n");
-=======
-    printf("\n---------------------Ex1---------------------\n");
->>>>>>> ecefc7bf4ad4793c2c19d3e57941af26b33e2883
     //Exo-1
 
-<<<<<<< HEAD
     int nb1;
     fflush(stdin);
     printf("Pick a number\n-> ");
@@ -32,9 +23,6 @@ int main(void){
 
 
     printf("\n-------Ex2-------\n\n");
-=======
-    printf("\n---------------------Ex2---------------------\n");
->>>>>>> ecefc7bf4ad4793c2c19d3e57941af26b33e2883
     //Exo-2
     fflush(stdin);
     printf("Pick a number\n-> ");
@@ -43,12 +31,8 @@ int main(void){
     all_evens_to(nb1);
     printf("\n\n");
 
-<<<<<<< HEAD
 
     printf("\n-------Ex3-------\n\n");
-=======
-    printf("\n---------------------Ex3---------------------\n");
->>>>>>> ecefc7bf4ad4793c2c19d3e57941af26b33e2883
     //Exo-3
     int nb2;
     fflush(stdin);
@@ -142,23 +126,6 @@ int main(void){
     }
     printf("\n");
 
-<<<<<<< HEAD
-=======
-    printf("\n---------------------Ex4---------------------\n");
-    //Exo-4
-    char sentence[256];
-    fflush(stdin);
-    printf("Write a short sentence (max 60 char long)\n-> ");
-    scanf("%s", sentence);
-    char character;
-    fflush(stdin);
-    printf("Give a character that should be searched for inside of the sentence\n-> ");
-    scanf("%c", &character);
-    printf("Inside \"%s\" there is \"%d\" occurence(s) of the \'%c\' char.", sentence, count_char(sentence, character), character);
-    printf("\n");
-
-    printf("\n---------------------Ex5---------------------\n");
->>>>>>> ecefc7bf4ad4793c2c19d3e57941af26b33e2883
 
     printf("\n---------------------End---------------------\n\n");
     fflush(stdin);

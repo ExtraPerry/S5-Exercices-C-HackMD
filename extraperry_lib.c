@@ -61,7 +61,6 @@ int count_char(char* str, char character) {
         }
     }
     return count;
-<<<<<<< HEAD
 }
 
 void draw_rectangle(int height, int width, char border, char corner, char inside) {
@@ -101,6 +100,4 @@ int count_me() {
     static int count = 0;
     count++;
     return count;
-=======
->>>>>>> ecefc7bf4ad4793c2c19d3e57941af26b33e2883
 }
