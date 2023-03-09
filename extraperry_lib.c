@@ -32,8 +32,7 @@ void all_evens_to(int number){
     }
 
     printf("Even numbers below %d : \n", number);
-    int i;
-    for (i = 0; i <= number; ++i) {
+    for (int i = 0; i <= number; ++i) {
         if(i%2 == 0) {
             printf(" - %d", i);
         }
@@ -46,8 +45,7 @@ int is_prime(int number) {
         return -1;
     }
 
-    int i;
-    for (i = 2; i < number; i++) {
+    for (int i = 2; i < number; i++) {
         if (number%i == 0) {
             return i;
         }
@@ -63,6 +61,7 @@ int count_char(char* str, char character) {
         }
     }
     return count;
+<<<<<<< HEAD
 }
 
 void draw_rectangle(int height, int width, char border, char corner, char inside) {
@@ -102,4 +101,6 @@ int count_me() {
     static int count = 0;
     count++;
     return count;
+=======
+>>>>>>> ecefc7bf4ad4793c2c19d3e57941af26b33e2883
 }
