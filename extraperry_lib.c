@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "extraperry_lib.h"
 
 int isPositiveNumber(int number){
     if (number < 0) {
@@ -27,9 +26,9 @@ char* fuzbiz(int number){
     return "none";
 }
 
-int all_evens_to(int number){
+void all_evens_to(int number){
     if (isPositiveNumber(number) != 0) {
-        return -1;
+        return;
     }
 
     printf("Even numbers below %d : \n", number);
@@ -39,7 +38,7 @@ int all_evens_to(int number){
             printf(" - %d", i);
         }
     }
-    return 0;
+    return;
 }
 
 int is_prime(int number) {
@@ -54,4 +53,53 @@ int is_prime(int number) {
         }
     }
     return 0;
+}
+
+int count_char(char* str, char character) {
+    int count = 0;
+    for(int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == character) {
+            count++;
+        }
+    }
+    return count;
+}
+
+void draw_rectangle(int height, int width, char border, char corner, char inside) {
+    for(int i = 0; i < height; i++) {
+        for(int j = 0; j < width; j++) {
+            if (((j == 0 || j == width-1) && (i == 0 || i == height-1))) {
+                printf("%c", corner);
+            } else if (((j == 0 || j == width-1) && (i != 0 || i != height-1)) || ((j != 0 || j != width-1) && (i == 0 || i == height-1))) {
+                printf("%c", border);
+            } else {
+                printf("%c", inside);
+            }
+        }
+        printf("\n");
+    }
+    return;
+}
+
+void show_multiple_tables() {
+    for(int i = 1; i < 10; i++){
+        printf("Table of %d", i);
+        printf("\n\n");
+        for(int j = 1; j < 10; j++){
+            printf("%d x %d = %d", i, j, i * j);
+            printf("\n");
+        }
+        printf("\n\n");
+    }
+    return;
+}
+
+void print_person(Person s_person) {
+    printf("Here is the reciet for %s who is %d years old.", s_person.name, s_person.age);
+}
+
+int count_me() {
+    static int count = 0;
+    count++;
+    return count;
 }
