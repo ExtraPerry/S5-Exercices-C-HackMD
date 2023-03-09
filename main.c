@@ -95,7 +95,11 @@ int main(void){
 
 
     printf("\n---------------------Ex6---------------------\n\n");
-    printf("Here is all the multiplication tables from 1 to 9\n-> ");
+    fflush(stdin);
+    printf("Here is all the multiplication tables from 1 to 9. Enter anything to continue\n-> ");
+    scanf("%s", str2);  //Take a break :D
+    printf("\n( You wrote %s )", str2);
+    printf("\n");
     printf("\n\n");
     show_multiple_tables();
 
@@ -130,7 +134,7 @@ int main(void){
     printf("\n---------------------End---------------------\n\n");
     fflush(stdin);
     printf("Enter anything to exit the program\n-> ");
-    scanf("%s", str2);
-    printf("%s", str2);
+    scanf("%s", str2);  //Take a break :D
+    printf("\n( You wrote %s )", str2);
     return 0;
 }
